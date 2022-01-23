@@ -1,0 +1,73 @@
+.hero.container {
+  padding: 0;
+}
+
+.hero {
+  background-color: $Very-Light-Gray;
+  position: relative;
+  top: -12rem;
+  background-image: url("../imgs/bg-intro-mobile.svg");
+  background-position: center 4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    background-image: url("../imgs/bg-intro-desktop.svg");
+    background-size: 100%;
+    background-position: 40vw 0vh;
+    top: 0rem;
+  }
+
+  &__content {
+    display: relative;
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__img-container {
+    position: relative;
+
+    @include desktop {
+      order: 2;
+      flex: 3;
+    }
+  }
+
+  &__img {
+    @include desktop {
+      width: 125%;
+      position: relative;
+      left: 16.5rem;
+      top: -3rem;
+    }
+  }
+
+  &__text {
+    margin-top: 0;
+    @include desktop {
+      order: 1;
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+
+  &__header {
+    margin-bottom: 2.3rem;
+  }
+
+  &__body {
+    margin-bottom: 3.5rem;
+  }
+
+  &__btn {
+    margin-bottom: 8.8rem;
+    @include desktop {
+      margin-bottom: 0rem;
+    }
+  }
+}

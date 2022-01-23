@@ -1,0 +1,49 @@
+.article {
+  background-color: $Very-Light-Gray;
+  padding-top: 9.4rem;
+  padding-bottom: 4.3rem;
+
+  &__items {
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__header {
+    margin-bottom: 3.8rem;
+
+    @include desktop {
+      text-align: left;
+    }
+  }
+
+  &__item {
+    background-color: $White;
+    margin-bottom: 2.3rem;
+    padding-bottom: 4.6rem;
+    border-radius: 0.5rem;
+  }
+
+  &__item:not(:last-child) {
+    @include desktop {
+      margin-right: 3rem;
+    }
+  }
+
+  &__img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-bottom: 3rem;
+
+    @include desktop {
+      height: 20rem;
+    }
+  }
+
+  &__text {
+    padding: 0 3rem 0 3rem;
+
+    @include desktop {
+      text-align: left;
+    }
+  }
+}

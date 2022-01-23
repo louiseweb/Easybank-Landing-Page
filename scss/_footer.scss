@@ -1,0 +1,71 @@
+.footer {
+  background-color: $Dark-Blue;
+  padding-top: 4rem;
+  padding-bottom: 4.8rem;
+
+  &__content {
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__col-1 {
+    @include desktop {
+      width: 28.5rem;
+      text-align: left;
+    }
+  }
+
+  &__col-2,
+  &__col-3 {
+    @include desktop {
+      width: 19.2rem;
+      text-align: left;
+    }
+  }
+
+  &__col-4 {
+    @include desktop {
+      width: 44.1rem;
+      text-align: right;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 3.2rem;
+  }
+
+  &__social-icons {
+    margin-bottom: 3rem;
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__social-icon:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &__links {
+    margin-bottom: 3rem;
+  }
+
+  &__link {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $White;
+    margin-bottom: 1rem;
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 3rem;
+  }
+}
